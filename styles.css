@@ -1,0 +1,34 @@
+/* Link design */
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* end of Link design */
+
+/* Navigation header */
+.nav {
+    text-align: right;
+    width: 100%;
+    padding: 15px;
+    padding-right: 30px;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.nav_heading_apps {
+    height: 30px;
+    width: 30px;
+    position: relative;
+}
