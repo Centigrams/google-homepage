@@ -1,8 +1,19 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding: 0;
+}
 /* Link design */
 
+.heading {
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
 .heading_link {
     text-decoration: none;
-    color: black;
+    color: rgba(0,0,0,0.87);
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,15 +30,15 @@
 .footer_link:hover {
     text-decoration: underline;
 }
-
-/* end of Link design */
+/* End of Link design */
 
 /* Navigation header */
 .nav {
     text-align: right;
     width: 100%;
-    padding: 15px;
-    padding-right: 30px;
+    margin: 0px;
+    padding-right: 0px;
+    
 }
 
 .nav_list {
@@ -61,7 +72,7 @@
 .nav_heading {
     position: relative;
     right: 15px;
-    padding: 0px 4px 0px 32px;
+    padding: 0px 0px 0px 32px;
     bottom: 25px;
 }
 
@@ -77,3 +88,184 @@
 .sign_in:hover {
     background-color: #4387e0;
     cursor: pointer;
+}
+/* End of navigation header */
+
+/* Main */
+.main-content {
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 0%;
+}
+
+
+.main {
+    text-align: center;
+    margin-top: 30px;
+    flex: 1;
+}
+
+.main__hero {
+    padding-top: 109px;
+}
+  
+.main__input {
+    margin-top: 30px;
+    position: relative;
+}
+.main__form {
+    max-width: 584px;
+    margin: 0 auto;
+}
+.form__group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    width: 100%;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 5px 8px 0 16px;
+}
+.form__group:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
+.form__logo--search {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+    margin-right: 7px;
+}
+.form__logo--search svg {
+    height: 20px;
+    width: 20px;
+    fill: gray;
+}
+.form__input {
+    height: 100%;
+    flex: 1;
+}
+.form__input input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    margin-top: -3px;
+    color: #101010;
+}
+.form__input input:focus {
+    outline: none;
+}
+  .form__logo--mic {
+    height: 100%;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5px;
+    margin-right: 7px;
+}
+.form__logo--mic svg {
+    height: 24px;
+    width: 24px;
+}
+
+.form__logo--mic:hover {
+    cursor: pointer;
+}
+.main__submit {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.main__submit button {
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #3f4346;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.main__submit button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+/* End of main */
+
+/* Footer */  
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 99.89%;
+    border: 1px solid #ddd;
+    background: #f2f2f2;
+    color: #70757a;;
+    font-size: 1.4rem;
+
+}
+
+.left-section,
+.right-section {
+  display: flex;
+}
+
+.right-section {
+    margin-right: 3rem;
+}
+  
+.footer-link {
+    display: block;
+    padding: 1rem 0 1rem 3rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.54);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+  
+.footer-link:hover {
+    text-decoration: underline;
+}
+  
+.footer-link:active {
+    color: var(--footer-font-active);
+}
+
+.country {
+    padding: 0.1px 0px;
+    border-top: none;
+    background:#f2f2f2 ;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+    width: 99.89%;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+
+}
+
+#country-name {
+    margin-left: 30px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* End of footer */
